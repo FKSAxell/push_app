@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "562230492948",
+    "firebase_url": "https://udemy-productos-flutter-default-rtdb.firebaseio.com",
+    "project_id": "udemy-productos-flutter",
+    "storage_bucket": "udemy-productos-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562230492948:android:9817e73a459157ec0acc01",
+        "android_client_info": {
+          "package_name": "com.example.push_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "562230492948-7vdo4or6bvk79jssjkqs25tvren1c4ib.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.push_app",
+            "certificate_hash": "1d047c7a34a071fd1a3a7a32fe566187767fe66d"
+          }
+        },
+        {
+          "client_id": "562230492948-79q4pr3mbivvn8dktfo5b90rt7avh6la.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9Eum-Gy9RSFO2feu2Nu3LeX5ZkRkHAIw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "562230492948-79q4pr3mbivvn8dktfo5b90rt7avh6la.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
