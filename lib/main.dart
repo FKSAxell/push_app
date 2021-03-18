@@ -6,11 +6,11 @@ import 'package:push_app/src/pages/mensaje_page.dart';
 import 'package:push_app/src/providers/push_notifications_provider.dart';
 
 
-Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
-  // If you're going to use other Firebase services in the background, such as Firestore,
-  // make sure you call `initializeApp` before using other Firebase services.
-  print("Handling a background message: ${message.messageId}");
-}
+// Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message)  async {
+//   // If you're going to use other Firebase services in the background, such as Firestore,
+//   // make sure you call `initializeApp` before using other Firebase services.
+//   print("Handling a background message: ${message.messageId}");
+// }
 
 
 void main() {
@@ -33,7 +33,8 @@ class _MyAppState extends State<MyApp> {
     try {
       // Wait for Firebase to initialize and set `_initialized` state to true
       await Firebase.initializeApp();
-      FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
+      FirebaseMessaging.onBackgroundMessage(PushNotificationsProvider.firebaseMessagingBackgroundHandler);
+      
       PushNotificationsProvider pushProvider = new PushNotificationsProvider();
       pushProvider.initNotifications();
       setState(() {
